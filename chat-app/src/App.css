@@ -31,9 +31,13 @@
 }
 
 .new-message-container {
+  position: relative;
+  padding: 16px 32px;
+}
+
+.new-message-container form {
   display: flex;
   flex-direction: row;
-  padding: 16px 32px;
 }
 
 input[type="text"] {
@@ -70,4 +74,25 @@ button {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%; left: 50%;
+}
+
+.emoji-recommendation-bar {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+  flex-wrap: wrap;
+
+  width: calc(100% - 64px);
+}
+
+.emoji-recommendation-bar button {
+  background-color: transparent;
+  border: 2px solid #6B8AFD;
+  border-radius: 1em;
+  font-size: 2em;
 }
