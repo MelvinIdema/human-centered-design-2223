@@ -1,4 +1,5 @@
 import {useState, useEffect, useRef} from 'react';
+import TextareaAutosize from 'react-textarea-autosize';
 import {v4 as uuidv4} from 'uuid';
 import './App.css';
 import BeatLoader from "react-spinners/BeatLoader";
@@ -124,7 +125,7 @@ function App() {
 
                 {showLoader && <div className="loader-container"><div className="emoji-recommendation-bar"><BeatLoader color="#6B8AFD"/></div></div>}
                 <form action="">
-                    <input ref={inputRef} type="text" onInput={onInput} value={newMessage}/>
+                    <TextareaAutosize name="chatMessage" ref={inputRef} type="text" onInput={onInput} value={newMessage}/>
                     <button onClick={onSubmit}>Send</button>
                 </form>
             </div>
