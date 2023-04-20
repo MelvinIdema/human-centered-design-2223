@@ -108,26 +108,29 @@ function App() {
 
             <div className="new-message-container">
                 {emojiRecommendationBarVisible &&
-                    <div className="emoji-recommendation-bar">
-                        {emojiRecommendation.emoticon_pairs.map((pair, index) => (
-                            <button key={index} onClick={() => {
-                                onEmojiRecommendationClick(pair);
-                            }}>
-                                {pair[0]}
-                                {pair[1]}
-                            </button>
-                        ))}
+                    <div className="emoji-recommendation-bar-container">
+                        <div className="emoji-recommendation-bar">
+                            {emojiRecommendation.emoticon_pairs.map((pair, index) => (
+                                <button key={index} onClick={() => {
+                                    onEmojiRecommendationClick(pair);
+                                }}>
+                                    {pair[0]}
+                                    {pair[1]}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 }
 
-                {showLoader && <div className="emoji-recommendation-bar"><BeatLoader color="#6B8AFD"/></div>}
+                {showLoader && <div className="loader-container"><div className="emoji-recommendation-bar"><BeatLoader color="#6B8AFD"/></div></div>}
                 <form action="">
                     <input ref={inputRef} type="text" onInput={onInput} value={newMessage}/>
                     <button onClick={onSubmit}>Send</button>
                 </form>
             </div>
         </div>
-    </>);
+    </>)
+        ;
 }
 
 export default App;
