@@ -67,7 +67,7 @@ function App() {
                     setShowLoader(true);
                     const emojiRecommendationResponse = await fetchEmojiRecommendation(controller);
                     setEmojiRecommendation(emojiRecommendationResponse);
-                    setEmojiRecommendationBarVisible(true);
+                    // setEmojiRecommendationBarVisible(true);
                     setShowLoader(false);
                 } catch (err) {
                     console.error(err);
@@ -209,6 +209,11 @@ function App() {
         }
     }, [handleKeyPress])
 
+    function makeEmojibarVisible(e) {
+        e.preventDefault();
+        setEmojiRecommendationBarVisible(true);
+    }
+
     return (<>
         {/*<button id="debug" className={debug ? 'active' : ''}*/}
         {/*        onClick={() => setDebug(!debug)}>DEBUG {debug ? 'on' : 'off'}</button>*/}
@@ -294,6 +299,10 @@ function App() {
 
             <div className="new-message-container">
                 {emojiRecommendationBarVisible && <>
+                    {showLoader && <div className="loader-container">
+                        <div className="emoji-recommendation-bar"><BeatLoader color="#6B8AFD"/></div>
+                    </div>}
+                    {!showLoader &&
                     <div className="emoji-recommendation-bar-container">
                         <div className="emoji-recommendation-bar" ref={emojiRecommendationBarRef}>
                             {emojiRecommendation.emoticon_pairs.map((pair, index) => (
@@ -306,12 +315,11 @@ function App() {
                             ))}
                         </div>
                     </div>
+                    }
                 </>}
 
-                {showLoader && <div className="loader-container">
-                    <div className="emoji-recommendation-bar"><BeatLoader color="#6B8AFD"/></div>
-                </div>}
                 <form action="">
+                    <button onClick={makeEmojibarVisible} style={{"margin-right": "16px"}}>😊</button>
                     <TextareaAutosize name="chatMessage" ref={inputRef} type="text" onInput={onInput}
                                       value={newMessage}/>
                     <button onClick={onSubmit} disabled={!tutorialShown}>Send</button>
