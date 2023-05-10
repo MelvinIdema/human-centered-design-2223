@@ -109,8 +109,8 @@ function App() {
     function onEmojiRecommendationClick(pair) {
         if(!tutorialShown) setTutorialShown(true);
         inputRef.current.focus();
-        setEmojiSelected(true);
-        setNewMessage(newMessage + " " + pair[0] + " " + pair[1]);
+        setEmojiSelected(prevEmojiSelected => !prevEmojiSelected);
+        setNewMessage(newMessage + " " + `${emojiSelected ? pair[0] : pair[1]}`);
     }
 
     const handleKeyPress = useCallback((event) => {
@@ -300,8 +300,9 @@ function App() {
                                 <button key={index} tabIndex={index} onClick={() => {
                                     onEmojiRecommendationClick(pair);
                                 }}>
-                                    {pair[0]}
-                                    {pair[1]}
+                                    {
+                                        emojiSelected ? pair[0] : pair[1]
+                                    }
                                 </button>
                             ))}
                         </div>
