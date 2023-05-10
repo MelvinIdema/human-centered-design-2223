@@ -8,14 +8,12 @@ function App() {
     const inputRef = useRef(null);
     const emojiRecommendationBarRef = useRef(null);
     const tutorialRef = useRef(null);
-
     const [debug, setDebug] = useState(false);
 
     const [messages, setMessages] = useState([
         {id: 1, text: 'Hallo', self: false},
         {id: 3, text: 'Hoe voel je je?', self: false},
     ]);
-
     const [newMessage, setNewMessage] = useState('');
 
     const [showLoader, setShowLoader] = useState(false);
