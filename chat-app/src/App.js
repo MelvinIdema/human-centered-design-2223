@@ -27,6 +27,7 @@ function App() {
     const [emojiRecommendation, setEmojiRecommendation] = useState(null);
 
     const [emojiSelected, setEmojiSelected] = useState(false);
+    const [generated, setGenerated] = useState(false);
     const [counter, setCounter] = useState(0);
 
     async function fetchEmojiRecommendation(controller) {
@@ -42,6 +43,7 @@ function App() {
                 signal: controller.signal
             });
             const res = await response.json();
+            setGenerated(true);
             return JSON.parse(res.data);
         } catch (err) {
             throw err;
@@ -50,6 +52,7 @@ function App() {
 
     // TODO: Should be rewritten to when emojiRecommendation updates
     useEffect(() => {
+        if(generated) return;
         if (emojiSelected) return;
         if (debug) return;
 
@@ -104,6 +107,11 @@ function App() {
     function onInput(e) {
         setNewMessage(e.target.value);
         setEmojiSelected(false);
+        setEmojiRecommendationBarVisible(false);
+        // If key entered is not backspace
+        if (e.nativeEvent.inputType !== "deleteContentBackward") {
+            setGenerated(false);
+        }
     }
 
     function onEmojiRecommendationClick(pair) {
@@ -203,7 +211,6 @@ function App() {
 
     useEffect(() => {
         document.addEventListener("keydown", handleKeyPress)
-
         return () => {
             document.removeEventListener("keydown", handleKeyPress)
         }
