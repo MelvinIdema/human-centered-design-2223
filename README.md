@@ -51,10 +51,11 @@ die aan zijn specifieke behoeften voldoet, met een intuïtief en toegankelijk on
 voor passende emoticons op basis van zijn getypte tekst.
 
 ## Oplossing ✨
-Introducing: A.I.Moji. Een geavanceerde tool die Eric ondersteunt met slimme emoji-suggesties. 
+Introducing: A.I.Moji: Een geavanceerde tool die Eric ondersteunt met slimme emoji-suggesties. 
 Aan de hand van de geschreven tekst van Eric, worden er 6 passende emoji-paren voorgesteld 
-aan de hand van Artificiële Intelligentie, Deze paren zijn zowel selecteerbaar met de muis alsmede 
-ook met het toetsenbord voor extra toegankelijkheid.
+door middel van Artificiële Intelligentie, Deze paren zijn zowel selecteerbaar met de muis als 
+ook met het toetsenbord voor extra toegankelijkheid. Daarnaast kan Eric bij het ontdekken van 
+cultureel verschillende betekenissen nieuwe emoji-paren verzoeken.
 
 ## Link Prototype 📎
 <a href="https://eric.ikbenmel.vin/"> https://eric.ikbenmel.vin/ </a>
