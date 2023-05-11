@@ -13,7 +13,6 @@ Is er goede interactie? Kan je 'mens' je product op een prettige manier bedienen
 Wat voor principes heb je gebruikt en getest? En is het leuk?
 
 ## Opdracht
-
 ### Ontwerpen met en voor echte mensen
 
 Voor dit vak krijg je een ontwerp-opdracht die je gaat maken voor 1 mens. 
