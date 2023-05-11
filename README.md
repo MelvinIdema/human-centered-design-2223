@@ -29,7 +29,11 @@
   <img src="https://img.shields.io/github/stars/melvinidema/browser-technologies-2223?style=social" alt="watchers" />
 </div>
 
+<div align="center">
+
 ![ezgif-2-4d7794c869.gif](chat-app%2Fpublic%2Fproces%2FAttachments%2Fezgif-2-4d7794c869.gif)
+
+</div>
 
 ## Onderzoeksvraag 💡
 Hoe kan Eric ondersteunt worden in het uitdrukken van lichaamstaal in chatberichten?
