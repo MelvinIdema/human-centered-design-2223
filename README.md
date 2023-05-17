@@ -57,6 +57,22 @@ door middel van Artificiële Intelligentie, Deze paren zijn zowel selecteerbaar 
 ook met het toetsenbord voor extra toegankelijkheid. Daarnaast kan Eric bij het ontdekken van 
 cultureel verschillende betekenissen nieuwe emoji-paren verzoeken.
 
+## Exclusive Design Principles 💡 🎨
+
+### Study situation
+Dit principe heb ik toegepast door Eric grondig te bestuderen. Ik heb gekeken wat zijn beperkingen zijn, maar ook zijn krachten. De devices die hij gebruikt en hoe hij deze gebruikt. De specifieke context waarin hij chatberichten gebruikt en de moeilijkheden die hij ondervindt bij het uitdrukken van zijn lichaamstaal. Door de situatie van Eric te bestuderen, kon ik een tool ontwerpen die specifiek aan zijn behoeften voldoet.  
+
+Zo blijkt hij met zijn telefoon voornamelijk rechtshandig te zijn, omdat zijn linkerhand anders het hele scherm verbergt. Maar ook dat hij liever een desktop gebruikt en om nog specifieker te zijn: het mechanische toetsenbord. Eric is namelijk gamer geweest en daardoor heel bekend met de pijltjes toetsen.
+
+### Ignore conventions
+Hoewel conventies vaak nuttig zijn, hebben ze ons in dit geval beperkt. De traditionele emoji-selectieschermen zijn niet ontworpen met gebruikers zoals Eric in gedachten. Daarom heb ik besloten om conventies terzijde te schuiven en een nieuwe, meer inclusieve benadering van emoji-selectie te ontwerpen. A.I.Moji stelt Eric in staat om emoticons te selecteren met zowel de muis als het toetsenbord, waardoor hij op een voor hem comfortabele manier emoties kan uitdrukken.
+
+### Prioritise identity
+Eric's identiteit en ervaring speelden een cruciale rol in het ontwerpproces van A.I.Moji. Ik ontwierp niet alleen voor Eric, maar ook met Eric. Zijn inzichten en ideeën werden opgenomen in het ontwerp, waardoor de tool echt aansloot bij zijn unieke behoeften en wensen. Door Eric actief bij het ontwerpproces te betrekken, kon ik een tool creëren die zijn identiteit en ervaring prioriteert.
+
+### Add nonsense
+Tijdens het ontwerpproces heb ik A.I. toegepast om de Eric's ervaring op te leuken: het suggereert namelijk emoticons gebaseerd op ingegeven tekst met een element van willekeur. Dat houdt het interessant en leuk om te gebruiken. Tijdens het ontwikkel- en testproces met Eric merkten we dat het plezierig was om te gebruiken en Eric zelfs graag de app testte. 
+
 ## Link Prototype 📎
 <a href="https://eric.ikbenmel.vin/"> https://eric.ikbenmel.vin/ </a>
 
